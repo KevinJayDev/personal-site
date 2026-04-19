@@ -62,7 +62,7 @@ No manual syncing needed beyond that.
 - ✅ Copy this `Learning_Plan` file into the repo as `LEARNING_PLAN.md` — file lives at repo root
 - ✅ Create `.claude/commands/session-end.md` — custom slash command created and working
 - ✅ Run `/session-end` to test it — first run happening now (this session)
-- [ ] Run `/help` to orient yourself to available commands
+- ✅ Run `/help` to orient yourself to available commands — explored the help dialog
 - [ ] Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)
 
 ✅ **Sync system is now live. From here, Claude Code maintains your progress automatically.**
