@@ -1,3 +1,4 @@
+// Root layout: sets Geist fonts, global metadata, and wraps all pages. Created 2026-04-19.
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

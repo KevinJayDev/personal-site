@@ -93,10 +93,10 @@ No manual syncing needed beyond that.
 - ✅ Deploy to Vercel — live at https://personal-site-lovat-zeta.vercel.app/, auto-deploys on push
 
 **Day 3 — CLAUDE.md & Memory**
-- [ ] Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again"
+- ✅ Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again" — added file header comment rule to CLAUDE.md; headers added to all existing source files
 - [ ] Run `/memory` to explore the memory configuration menu
 - [ ] Enable **auto-memory** and **auto-dream**
-- [ ] Run `/dream` manually once to see what it does
+- [ ] Run `/dream` manually once to see what it does — ⚠️ `/dream` is not a recognized command in this Claude Code version; skip or revisit
 - [ ] Review what's now in `CLAUDE.md` — it should reflect your preferences
 
 **Day 4 — Planning Mode**

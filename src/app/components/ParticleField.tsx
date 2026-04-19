@@ -1,3 +1,4 @@
+// Canvas-based particle field with mouse repulsion and connection lines, rendered behind hero content. Created 2026-04-19.
 "use client";
 
 import { useEffect, useRef } from "react";

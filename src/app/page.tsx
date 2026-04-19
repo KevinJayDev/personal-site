@@ -1,3 +1,4 @@
+// Homepage hero section: name, role, bio, and social links over a particle field background. Created 2026-04-19.
 import ParticleField from "./components/ParticleField";
 
 export default function Home() {
