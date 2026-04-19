@@ -70,13 +70,12 @@ No manual syncing needed beyond that.
 - ✅ Clone it locally and open in VS Code
 - ✅ Run `claude` inside the repo directory
 - ✅ Run `/init` to generate a starter `CLAUDE.md`
-- [ ] Ask Claude Code to add this rule to `CLAUDE.md`:
-  > "After every session, update `LEARNING_PLAN.md` — mark completed items with ✅ and add a one-line note on what was done or learned. Then commit and push the changes."
-- [ ] Copy this `Learning_Plan` file into the repo as `LEARNING_PLAN.md`
-- [ ] Create `.claude/commands/session-end.md` — a custom slash command that tells Claude to update the plan, commit, and push (ask Claude Code to write this for you)
-- [ ] Run `/session-end` to test it — verify the commit appears on GitHub
-- [ ] Run `/help` to orient yourself to available commands
-- [ ] Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)
+- ✅ Ask Claude Code to add this rule to `CLAUDE.md` — session-end rule added
+- ✅ Copy this `Learning_Plan` file into the repo as `LEARNING_PLAN.md` — file lives at repo root
+- ✅ Create `.claude/commands/session-end.md` — custom slash command created and working
+- ✅ Run `/session-end` to test it — verified, commits and pushes to GitHub
+- ✅ Run `/help` to orient yourself to available commands — explored the help dialog
+- ✅ Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet) — reviewed key commands
 
 ✅ **Sync system is now live. From here, Claude Code maintains your progress automatically.**
 
@@ -86,11 +85,12 @@ No manual syncing needed beyond that.
 *Learn the highest-leverage habits before writing much code.*
 
 **Day 2 — Verification (the #1 tip)**
-- ✅ Install the **Claude Code Chrome extension**: code.claude.com/docs/en/chrome — connected via `/chrome` and `/ide`
-- ✅ Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript — done in prior session
-- ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, particle field, glassmorphism card, CSS entrance animations, glitch effect, animated underlines; verified with curl each time
-- [ ] Observe how Claude uses the browser extension to iterate until it looks right — extension connected but screenshot tool not available; revisit
-- ✅ Deploy to Vercel: connect your GitHub repo at vercel.com — live and auto-deploying on push
+- ✅ Install the **Claude Code Chrome extension** — installed and connected via `/chrome`
+- ✅ Scaffold the Next.js project — Next.js 16 + TypeScript + Tailwind CSS v4 scaffolded
+- ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, verified with curl
+- ✅ Built particle field background, glassmorphism card, staggered entrance animations, glitch effect on name, animated link underlines — all one-shotted
+- ⚠️ Chrome extension visual screenshot tool not working yet — Claude falls back to curl; revisit
+- ✅ Deploy to Vercel — live at https://personal-site-lovat-zeta.vercel.app/, auto-deploys on push
 
 **Day 3 — CLAUDE.md & Memory**
 - [ ] Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again"
@@ -110,7 +110,7 @@ No manual syncing needed beyond that.
 - [ ] Practice these prompts on real website tasks:
   - "Grill me on these changes and don't make a PR until I pass your test."
   - "Knowing everything you know now, scrap this and implement the elegant solution."
-  - ✅ "Prove to me this works." (compare before/after in the browser) — used on hero section; Claude verified via curl
+  - "Prove to me this works." (compare before/after in the browser)
 - [ ] Write a detailed spec for one feature before handing it off — observe the quality difference
 
 **Day 6 — Effort Levels & Output Styles**
