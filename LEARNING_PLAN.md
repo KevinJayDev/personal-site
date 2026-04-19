@@ -94,10 +94,10 @@ No manual syncing needed beyond that.
 
 **Day 3 — CLAUDE.md & Memory**
 - ✅ Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again" — added file header comment rule to CLAUDE.md; headers added to all existing source files
-- [ ] Run `/memory` to explore the memory configuration menu
-- [ ] Enable **auto-memory** and **auto-dream**
-- [ ] Run `/dream` manually once to see what it does — ⚠️ `/dream` is not a recognized command in this Claude Code version; skip or revisit
-- [ ] Review what's now in `CLAUDE.md` — it should reflect your preferences
+- ✅ Run `/memory` to explore the memory configuration menu — explored memory configuration options
+- ✅ Enable **auto-memory** and **auto-dream** — auto-memory enabled
+- [ ] Run `/dream` manually once to see what it does — ⚠️ not available in current Claude Code version; revisit later
+- ✅ Review what's now in `CLAUDE.md` — it should reflect your preferences
 
 **Day 4 — Planning Mode**
 - [ ] Press `Shift+Tab` to enter plan mode
