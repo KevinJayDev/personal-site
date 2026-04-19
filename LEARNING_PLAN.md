@@ -20,7 +20,19 @@
 
 ---
 
-## How Progress Is Tracked (Auto-Sync System)
+## Coaching Notes (for Claude.ai)
+- Always tell Kevin to restart Claude Code after creating new custom commands or making changes to `.claude/` config files — they don't hot-reload.
+- Be explicit about every step, including things that seem obvious. Kevin is learning from zero.
+
+## Sync Workflow (keeping this chat up to date)
+At the end of each coding session in Claude Code, run `/session-end` — it updates `LEARNING_PLAN.md`, commits, and pushes to GitHub automatically.
+
+To sync with this claude.ai chat:
+1. Open `LEARNING_PLAN.md` in VS Code
+2. Select all (Cmd + A), copy (Cmd + C)
+3. Paste it into this chat and say: **"Here's my updated learning plan — what's next?"**
+
+That's it. No manual editing needed — Claude Code maintains the file, you just paste it here.
 
 Claude Code is instructed (via `CLAUDE.md`) to update this file after every session.
 When checking in at claude.ai, share the repo or this file and say:
@@ -58,12 +70,13 @@ No manual syncing needed beyond that.
 - ✅ Clone it locally and open in VS Code
 - ✅ Run `claude` inside the repo directory
 - ✅ Run `/init` to generate a starter `CLAUDE.md`
-- ✅ Ask Claude Code to add this rule to `CLAUDE.md` — session-end rule added to CLAUDE.md
-- ✅ Copy this `Learning_Plan` file into the repo as `LEARNING_PLAN.md` — file lives at repo root
-- ✅ Create `.claude/commands/session-end.md` — custom slash command created and working
-- ✅ Run `/session-end` to test it — first run happening now (this session)
-- ✅ Run `/help` to orient yourself to available commands — explored the help dialog
-- ✅ Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet) — reviewed key commands and workflows
+- [ ] Ask Claude Code to add this rule to `CLAUDE.md`:
+  > "After every session, update `LEARNING_PLAN.md` — mark completed items with ✅ and add a one-line note on what was done or learned. Then commit and push the changes."
+- [ ] Copy this `Learning_Plan` file into the repo as `LEARNING_PLAN.md`
+- [ ] Create `.claude/commands/session-end.md` — a custom slash command that tells Claude to update the plan, commit, and push (ask Claude Code to write this for you)
+- [ ] Run `/session-end` to test it — verify the commit appears on GitHub
+- [ ] Run `/help` to orient yourself to available commands
+- [ ] Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)
 
 ✅ **Sync system is now live. From here, Claude Code maintains your progress automatically.**
 
@@ -74,7 +87,7 @@ No manual syncing needed beyond that.
 
 **Day 2 — Verification (the #1 tip)**
 - [ ] Install the **Claude Code Chrome extension**: code.claude.com/docs/en/chrome
-- ✅ Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript — Next.js 16 + TypeScript + Tailwind CSS v4 scaffolded
+- [ ] Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript
 - [ ] Start the dev server and give Claude a small UI task; follow it with "Prove to me this works"
 - [ ] Observe how Claude uses the browser extension to iterate until it looks right
 - [ ] Deploy to Vercel: connect your GitHub repo at vercel.com — it auto-deploys on every push
@@ -230,6 +243,7 @@ No manual syncing needed beyond that.
 - [ ] You have a personal slash command library that reflects your actual workflows
 - [ ] Identify the single highest-leverage thing you've built — document it in `CLAUDE.md`
 - [ ] The personal site is live at your domain (or `.vercel.app`). The finance app has a working foundation.
+- [ ] **Start the Cowork expense report project** — see `PROJECT_IDEAS.md` for details
 
 ---
 
