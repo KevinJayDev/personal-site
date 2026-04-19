@@ -88,7 +88,7 @@ No manual syncing needed beyond that.
 **Day 2 — Verification (the #1 tip)**
 - ✅ Install the **Claude Code Chrome extension**: code.claude.com/docs/en/chrome — connected via `/chrome` and `/ide`
 - ✅ Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript — done in prior session
-- ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, used curl to verify all content present
+- ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, particle field, glassmorphism card, CSS entrance animations, glitch effect, animated underlines; verified with curl each time
 - [ ] Observe how Claude uses the browser extension to iterate until it looks right — extension connected but screenshot tool not available; revisit
 - [ ] Deploy to Vercel: connect your GitHub repo at vercel.com — it auto-deploys on every push
 
