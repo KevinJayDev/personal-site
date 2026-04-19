@@ -244,6 +244,7 @@ No manual syncing needed beyond that.
 - [ ] Identify the single highest-leverage thing you've built — document it in `CLAUDE.md`
 - [ ] The personal site is live at your domain (or `.vercel.app`). The finance app has a working foundation.
 - [ ] **Start the Cowork expense report project** — see `PROJECT_IDEAS.md` for details
+- [ ] **Plan the daily generative content page** — see `PROJECT_IDEAS.md`, start with Phase 1 (plain text) to learn Cowork, evolve toward interactive visualizations
 
 ---
 
