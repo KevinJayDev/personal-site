@@ -86,10 +86,10 @@ No manual syncing needed beyond that.
 *Learn the highest-leverage habits before writing much code.*
 
 **Day 2 — Verification (the #1 tip)**
-- [ ] Install the **Claude Code Chrome extension**: code.claude.com/docs/en/chrome
-- [ ] Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript
-- [ ] Start the dev server and give Claude a small UI task; follow it with "Prove to me this works"
-- [ ] Observe how Claude uses the browser extension to iterate until it looks right
+- ✅ Install the **Claude Code Chrome extension**: code.claude.com/docs/en/chrome — connected via `/chrome` and `/ide`
+- ✅ Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript — done in prior session
+- ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, used curl to verify all content present
+- [ ] Observe how Claude uses the browser extension to iterate until it looks right — extension connected but screenshot tool not available; revisit
 - [ ] Deploy to Vercel: connect your GitHub repo at vercel.com — it auto-deploys on every push
 
 **Day 3 — CLAUDE.md & Memory**
@@ -110,7 +110,7 @@ No manual syncing needed beyond that.
 - [ ] Practice these prompts on real website tasks:
   - "Grill me on these changes and don't make a PR until I pass your test."
   - "Knowing everything you know now, scrap this and implement the elegant solution."
-  - "Prove to me this works." (compare before/after in the browser)
+  - ✅ "Prove to me this works." (compare before/after in the browser) — used on hero section; Claude verified via curl
 - [ ] Write a detailed spec for one feature before handing it off — observe the quality difference
 
 **Day 6 — Effort Levels & Output Styles**
@@ -133,6 +133,7 @@ No manual syncing needed beyond that.
 **Day 8 — Slash Commands**
 - [ ] Create a `/page` command: adds a new Next.js page with standard boilerplate
 - [ ] Create a `/techdebt` command: reviews changed files for duplication and complexity
+- [ ] Create a `/log-session` command: extracts meaningful prompts from the session and appends them to `build-log.json` — powers the Build Diary page (see `PROJECT_IDEAS.md`)
 - [ ] Practice: any repeated action → turn it into a command
 
 **Day 9 — Permissions**

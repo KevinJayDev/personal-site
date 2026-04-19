@@ -24,7 +24,13 @@
 
 ---
 
-## 4. Daily Generative Content Page (on Personal Site)
+## 5. Build Diary Page (on Personal Site)
+- **Purpose:** A page on the personal site that shows every meaningful Claude Code prompt that built the site, and what it returned. A transparent, auto-generated record of how the site was created.
+- **Why it's compelling:** Most portfolios are static. This one documents its own creation in real time. Shows AI/ML fluency in a way a clean website never could.
+- **How it works:** A `/log-session` slash command extracts meaningful prompts from the current session and appends them to a `build-log.json` file. The page reads that file and renders a timeline.
+- **Design idea:** Make it look like a terminal or chat interface — not a table. Each entry shows the prompt, a summary of what changed, maybe a before/after screenshot.
+- **Curation note:** Filter out boring commands (`git add .`, `npm run dev`) — only surface meaningful Claude interactions.
+- **⏰ START EARLY:** Set up basic logging from Day 2 onward so you capture the full build history from scratch. Build the actual page and slash command on Day 8.
 - **Tools:** Cowork (scheduling + automation) + Claude Code (page infrastructure)
 - **Purpose:** Cowork runs daily, generates something creative, commits it to the repo, Vercel auto-deploys. You check the site at work and see what it made.
 - **Roadmap:**
