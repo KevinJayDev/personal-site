@@ -63,7 +63,7 @@ No manual syncing needed beyond that.
 - ✅ Create `.claude/commands/session-end.md` — custom slash command created and working
 - ✅ Run `/session-end` to test it — first run happening now (this session)
 - ✅ Run `/help` to orient yourself to available commands — explored the help dialog
-- [ ] Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)
+- ✅ Skim the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet) — reviewed key commands and workflows
 
 ✅ **Sync system is now live. From here, Claude Code maintains your progress automatically.**
 
