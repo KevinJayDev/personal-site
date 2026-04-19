@@ -90,7 +90,7 @@ No manual syncing needed beyond that.
 - ✅ Scaffold the Next.js project: ask Claude Code to run `npx create-next-app@latest` with TypeScript — done in prior session
 - ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, particle field, glassmorphism card, CSS entrance animations, glitch effect, animated underlines; verified with curl each time
 - [ ] Observe how Claude uses the browser extension to iterate until it looks right — extension connected but screenshot tool not available; revisit
-- [ ] Deploy to Vercel: connect your GitHub repo at vercel.com — it auto-deploys on every push
+- ✅ Deploy to Vercel: connect your GitHub repo at vercel.com — live and auto-deploying on push
 
 **Day 3 — CLAUDE.md & Memory**
 - [ ] Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again"
