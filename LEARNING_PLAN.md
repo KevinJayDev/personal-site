@@ -89,7 +89,7 @@ No manual syncing needed beyond that.
 - ✅ Scaffold the Next.js project — Next.js 16 + TypeScript + Tailwind CSS v4 scaffolded
 - ✅ Start the dev server and give Claude a small UI task; follow it with "Prove to me this works" — built hero section, verified with curl
 - ✅ Built particle field background, glassmorphism card, staggered entrance animations, glitch effect on name, animated link underlines — all one-shotted
-- ⚠️ Chrome extension visual screenshot tool not working yet — Claude falls back to curl; revisit
+- ✅ Chrome extension visual screenshot tool now working — used browser automation to verify nav and all pages
 - ✅ Deploy to Vercel — live at https://personal-site-lovat-zeta.vercel.app/, auto-deploys on push
 
 **Day 3 — CLAUDE.md & Memory**
@@ -100,9 +100,9 @@ No manual syncing needed beyond that.
 - ✅ Review what's now in `CLAUDE.md` — it should reflect your preferences
 
 **Day 4 — Planning Mode**
-- [ ] Press `Shift+Tab` to enter plan mode
-- [ ] Use it to plan a real feature: e.g., "add a projects section to the homepage"
-- [ ] Practice the flow: plan → refine → auto-accept → execute
+- ✅ Press `Shift+Tab` to enter plan mode — used `/plan` command to enter plan mode
+- ✅ Use it to plan a real feature — planned sticky nav with About & Projects pages; used AskUserQuestion to refine nav style and page selection
+- ✅ Practice the flow: plan → refine → auto-accept → execute — full flow completed; Nav.tsx + two new routes built and deployed
 - [ ] Have Claude review its own plan "as a staff engineer" before executing
 - [ ] Use `claude --name "homepage-projects"` to name the session
 
