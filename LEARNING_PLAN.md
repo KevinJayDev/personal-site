@@ -91,6 +91,7 @@ No manual syncing needed beyond that.
 - ✅ Built particle field background, glassmorphism card, staggered entrance animations, glitch effect on name, animated link underlines — all one-shotted
 - ✅ Chrome extension visual screenshot tool now working — used browser automation to verify nav and all pages
 - ✅ Deploy to Vercel — live at https://personal-site-lovat-zeta.vercel.app/, auto-deploys on push
+- ✅ Codebase cleanup — deleted unused `ParticleField.tsx`, removed dead `.glitch` CSS + keyframes, fixed JSX indentation in About/Projects pages
 
 **Day 3 — CLAUDE.md & Memory**
 - ✅ Make Claude do something you don't like, correct it, then say: "Update your CLAUDE.md so you don't make that mistake again" — added file header comment rule to CLAUDE.md; headers added to all existing source files
