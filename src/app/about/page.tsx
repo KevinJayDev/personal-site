@@ -1,8 +1,12 @@
 // About page: background, skills, and experience. Created 2026-04-26.
+import Nav from "../components/Nav";
+
 export default function About() {
   const skills = ["Python", "TypeScript", "PyTorch", "Next.js", "LLM fine-tuning", "MLOps"];
 
   return (
+    <>
+    <Nav />
     <div className="flex flex-1 items-center justify-center px-6 py-24 bg-gradient-to-br from-zinc-50 via-white to-indigo-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-indigo-950">
       <main className="hero-card relative w-full max-w-xl flex flex-col gap-8 rounded-2xl border border-indigo-200/60 dark:border-indigo-500/20 bg-white/60 dark:bg-zinc-900/50 backdrop-blur-md px-10 py-10">
         <div className="flex flex-col gap-1">
@@ -51,5 +55,6 @@ export default function About() {
         </div>
       </main>
     </div>
+    </>
   );
 }

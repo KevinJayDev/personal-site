@@ -1,82 +1,65 @@
-// Homepage hero section: name, role, bio, and social links over a particle field background. Created 2026-04-19.
-import ParticleField from "./components/ParticleField";
+// Homepage: cinematic cloud-video hero with pull-up heading and pill nav. Created 2026-04-19.
+import WordsPullUp from "./components/WordsPullUp";
+import PillNav from "./components/PillNav";
+import HeroCTA from "./components/HeroCTA";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center px-6 py-24 bg-gradient-to-br from-zinc-50 via-white to-indigo-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-indigo-950">
-      <ParticleField />
+    <div className="h-screen bg-black p-4 md:p-6 flex">
+      {/* Inner rounded container */}
+      <div className="relative flex-1 rounded-[2rem] overflow-hidden">
 
-      {/* Grid texture */}
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-0 opacity-[0.03] dark:opacity-[0.06]"
-        style={{
-          zIndex: 1,
-          backgroundImage:
-            "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-        }}
-      />
+        {/* Cloud video background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+        />
 
-      {/* Glassmorphism card */}
-      <main
-        className="hero-card relative w-full max-w-xl flex flex-col gap-8 rounded-2xl border border-indigo-200/60 dark:border-indigo-500/20 bg-white/60 dark:bg-zinc-900/50 backdrop-blur-md px-10 py-10"
-        style={{ zIndex: 2 }}
-      >
-        {/* Avatar */}
-        <div
-          className="animate-entrance shrink-0 w-20 h-20 rounded-full bg-gradient-to-br from-indigo-100 to-violet-100 dark:from-indigo-900 dark:to-violet-900 ring-1 ring-indigo-200 dark:ring-indigo-800 flex items-center justify-center text-indigo-400 dark:text-indigo-500 text-xs font-medium tracking-wide uppercase"
-          style={{ animationDelay: "0ms" }}
-        >
-          Photo
+        {/* Fractal noise overlay */}
+        <div className="noise-overlay mix-blend-overlay" style={{ opacity: 0.7 }} />
+
+        {/* Gradient — darkens top + bottom edges */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 pointer-events-none" />
+
+        {/* Floating pill nav */}
+        <PillNav />
+
+        {/* Hero content — bottom aligned */}
+        <div className="absolute bottom-8 left-8 right-8 grid grid-cols-12 items-end gap-4">
+
+          {/* Giant name */}
+          <div className="col-span-12 lg:col-span-8">
+            <WordsPullUp
+              words={["Kevin", "Jay"]}
+              className="flex-col items-start"
+              style={{
+                fontSize: "clamp(5rem, 20vw, 22vw)",
+                color: "#E1E0CC",
+                lineHeight: 0.85,
+                letterSpacing: "-0.07em",
+                fontWeight: 500,
+              }}
+            />
+          </div>
+
+          {/* Bio + CTA */}
+          <div className="col-span-12 lg:col-span-4 flex flex-col gap-6 pb-2">
+            <p
+              className="text-xs sm:text-sm"
+              style={{ color: "rgba(222, 219, 200, 0.7)", lineHeight: 1.2 }}
+            >
+              I build intelligent systems and ship products at the intersection
+              of machine learning and software engineering.
+            </p>
+            <HeroCTA />
+          </div>
+
         </div>
-
-        {/* Name */}
-        <div className="flex flex-col gap-1 -mt-2">
-          <h1
-            className="glitch animate-entrance text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
-            data-text="Kevin Jay"
-            style={{ animationDelay: "150ms" }}
-          >
-            Kevin Jay
-          </h1>
-
-          {/* Role */}
-          <p
-            className="animate-entrance text-base font-medium text-indigo-600 dark:text-indigo-400"
-            style={{ animationDelay: "300ms" }}
-          >
-            AI/ML Engineer
-          </p>
-        </div>
-
-        {/* Bio */}
-        <p
-          className="animate-entrance text-base text-zinc-600 dark:text-zinc-400 leading-relaxed"
-          style={{ animationDelay: "450ms" }}
-        >
-          I build intelligent systems and ship products at the intersection of
-          machine learning and software engineering.
-        </p>
-
-        <hr className="border-zinc-200 dark:border-zinc-800" />
-
-        {/* Links */}
-        <div
-          className="animate-entrance flex gap-6 text-sm font-medium text-zinc-500 dark:text-zinc-400"
-          style={{ animationDelay: "600ms" }}
-        >
-          <a href="#" className="link-draw hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-            GitHub
-          </a>
-          <a href="#" className="link-draw hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-            LinkedIn
-          </a>
-          <a href="mailto:kevin@ksjay.com" className="link-draw hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-            Email
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
   );
 }
